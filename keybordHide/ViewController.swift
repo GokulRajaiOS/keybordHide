@@ -18,7 +18,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let center: NotificationCenter = NotificationCenter.default;center.addObserver(self, selector: #selector(keyborddidshow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         center.addObserver(self, selector: #selector(keybordWilHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        
+        print("success")
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTextField = textField
@@ -48,6 +48,5 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
         }
     }
-
 }
 
